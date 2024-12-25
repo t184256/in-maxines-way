@@ -1,0 +1,95 @@
+// My custom styling:
+
+#set par(
+  justify: true,
+  leading: 0.45em,  // vs the default of 0.65em
+  spacing: 1.1em,  // vs the default of 1.2em
+)
+#set text(costs: (hyphenation: 200%))
+#show heading: it => [
+  #set text(size: 16pt)
+  #set par(spacing: 2em)
+  \
+  #par(strong(it.body))
+]
+
+// Direct speech, language-specific
+
+#let speechpar(speech) = context {
+  let opener = if text.lang == "ru" [---~] else { sym.quote.l.double }
+  let speech_ = if text.lang == "ru" { box(opener) + speech } else { speech }
+  par(
+    justify: true,
+    hanging-indent: measure(opener).width,
+    speech_
+  )
+}
+
+#let speechnorm(text) = context {
+  block(width: 100%, above: 0.45em, below: 0.45em, speechpar(text))
+}
+#let speechtail(text) = context {
+  block(width: 100%, above: 0.45em, below: 1.10em, speechpar(text))
+}
+#let speechhead(text) = context {
+  block(width: 100%, above: 1.10em, below: 0.45em, speechpar(text))
+}
+#let speechboth(text) = context {
+  block(width: 100%, above: 1.10em, below: 1.10em, speechpar(text))
+}
+
+
+// Pandoc defines this
+
+#let horizontalrule = [
+  #set par(leading: 0em, spacing: 0em)
+  #line(start: (25%,0%), end: (75%,0%), stroke: 0.5pt)
+]
+
+// Metadata:
+
+#set document(
+  author: "$author$",
+  title: "$title$",
+)
+#set text(
+  lang: "$language$",
+  region: "$region$",
+)
+
+// Page properties:
+
+#set page(
+  margin: (rest: 2mm),
+  width: 9cm,
+  height: 12cm,
+)
+
+// Global formatting:
+
+#set text(
+  font: "Noto Serif",
+  stretch: 62.5%,  // ExtraCondensed
+  size: 10pt,
+)
+
+// A really basic book-like template:
+
+#page[
+  #align(center + horizon)[
+    #par(leading: 1em)[
+      #text(size: 20pt, [$title$]) \
+      #text(size: 12pt, [$subtitle$]) \
+      #text(size: 12pt, [$author$])
+    ]
+  ]
+]
+
+#page[
+$include-before$
+
+]
+
+#page[
+#outline(title: "$title$")
+]

@@ -1,0 +1,17 @@
+TODO
+NOTES
+.direnv
+tmp
+result
+maint/.mypy_cache/
+text/*/.stripped.*
+in-maxines-way.*.pdf
+in-maxines-way.*.md
+in-maxines-way.*.typ
+in-maxines-way.*.txt
+in-maxines-way.*.epub
+in-maxines-way.*.fb2
+.version
+.check-lt-ru
+.check-lt-en
+.check-wc

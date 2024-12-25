@@ -1,0 +1,17 @@
+{"rule":"QUESTION_MARK","sentence":"^\\Q\"Whom do I--\" shouted Elektra over the new wave of guitars.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qhere's the button if you need me'.\\E$"}
+{"rule":"TO_VB_ITS_NN","sentence":"^\\Q\"Someone's gonna foot the bill-- not to mention it's murder.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qlawn!\"\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qgo ahead?\\E$"}
+{"rule":"LEMME","sentence":"^\\QLemme guess, that scarf of yours?\"\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qto find her nearby, aiming at the wall with the prototype gun.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qme!\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qoutta!\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qhere!\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qyou!\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qidiot!\"\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qinvest like a normal person?\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qweapons?\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qlogistics?\"\\E$"}
+{"rule":"CAUSE_BECAUSE","sentence":"^\\QCause I was outta town.\\E$"}
+{"rule":"EN_REPEATEDWORDS","sentence":"^\\QI can bring all the team I need, I just--\"\n\"Look, I love the sound of that.\\E$"}

@@ -1,0 +1,3 @@
+SoglasovanieNN_Verb
+Many_PNN
+PNN_ON_END
